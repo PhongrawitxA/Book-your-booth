@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tester">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_bookyourbooth"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_bookyourbooth_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tester"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ShowInfoActivity"/>
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".FetchImageBooth" />
+        <activity android:name=".selectBoothtype" />
+        <activity
+            android:name=".show_general"
+            android:theme="@style/AppTheme2.SlidrActivityTheme" />
+        <activity
+            android:name=".show_premium"
+            android:theme="@style/AppTheme2.SlidrActivityTheme" />
+        <activity
+            android:name=".select_booth_event01"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".EditActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".show_bill" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".select_booth_event02" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".show_bill_history" />
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

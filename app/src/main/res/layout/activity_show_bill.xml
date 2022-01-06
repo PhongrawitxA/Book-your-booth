@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show_bill"
+    android:background="@drawable/backgroundbill"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/title_bill"
+                android:layout_width="236dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/title_bill"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="80dp"
+                />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="74dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Name :"
+                android:textSize="16sp"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="17dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/fullName_bill"
+                android:layout_width="181dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="140dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:layout_marginLeft="80dp"
+                android:textColor="@color/white"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/event_bill"
+                    android:layout_width="209dp"
+                    android:layout_height="36dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:gravity="center_vertical"
+                    android:text="Event"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                     />
+
+                <TextView
+                    android:id="@+id/priceText_bill4"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Zone :"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/priceText_bill3"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="140dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Booth : "
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/priceText_bill2"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="200dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Type :"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/priceText_bill"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="260dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Price"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="80dp"
+                    android:layout_height="36dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Total"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="270dp"
+                    />
+
+                <TextView
+                    android:id="@+id/zone_bill"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="80dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:layout_marginLeft="270dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Booth_bill"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginLeft="270dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/Type_bill"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginLeft="270dp"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/price_bill"
+                    android:layout_width="83dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="260dp"
+                    android:layout_marginLeft="270dp"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="@string/dateAndTime"
+                    android:layout_marginTop="310dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppinsmedium"
+                    />
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:layout_marginTop="313dp"
+                    android:layout_marginLeft="123dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="44dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/iconicon" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="129dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="140dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="right"
+        android:text="Book your booth"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="88dp"
+        android:text="Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/log_ui"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttoncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="88dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonbook"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/log_ui"
+        android:textColor="@color/white"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

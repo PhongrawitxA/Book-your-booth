@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".select_booth_event02"
+    android:background="@drawable/my_bg_anim">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_selectevent02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar3"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMMART"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="360dp"
+                android:layout_height="651dp"
+                app:srcCompat="@drawable/event_02"
+                />
+            <TextView
+                android:id="@+id/zoneA_E2"
+                android:layout_width="188dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginLeft="13dp"/>
+            <TextView
+                android:id="@+id/zoneB_E2"
+                android:layout_width="127dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="224dp"
+                android:layout_marginLeft="203dp"/>
+            <TextView
+                android:id="@+id/zoneC_E2"
+                android:layout_width="158dp"
+                android:layout_height="92dp"
+                android:layout_marginTop="310dp"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:id="@+id/zoneD_E2"
+                android:layout_width="137dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="310dp"
+                android:layout_marginLeft="203dp"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Tab zone to select booth"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

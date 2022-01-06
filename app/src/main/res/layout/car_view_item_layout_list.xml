@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="0dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingBottom="4dp"
+        android:background="@drawable/card5"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/bookfair" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview1"
+            android:text="Title Text"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="120dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview2"
+            android:text="Detail Text"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="121dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

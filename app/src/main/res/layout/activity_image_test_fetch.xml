@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FetchImageBooth"
+    android:background="@drawable/my_bg_anim">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_imagetestfetch"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar3"
+            android:minHeight="?attr/actionBarSize" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="450dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="18dp"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="360dp"
+                android:layout_height="420dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="9dp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutEditSelectBooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/booth"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/selectbooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_storefront"
+                android:drawableRight="@drawable/ic_storefront"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/poppinsbold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bookbooth"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/log_ui"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
